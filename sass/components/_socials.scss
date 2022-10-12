@@ -1,0 +1,26 @@
+.social__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    fill: var(--social-fill);
+
+    border: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--white-text);
+        background-color: var(--nav-color);
+    }
+}
+
