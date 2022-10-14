@@ -3,6 +3,7 @@
   
   @media screen and (min-width: 768px) {
    display: flex;
+   flex-wrap: wrap;
     align-items: baseline;  
   }
  
@@ -22,13 +23,20 @@
 
 
 
-.footer__contact {
+.footer__contact__wrap {
   @media screen and (max-width: 767px){
     text-align: center;
     margin-bottom: 60px;
   }
+@media screen and (min-width: 768px){
+  
+    margin-left: 76px;
+    margin-right: auto;
+}
     
    @media screen and (min-width: 1600px){
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 20px;
    }
   
@@ -60,8 +68,12 @@
     align-items: center;
     margin-bottom: 60px;
   }
+   @media screen and (min-width: 768px) {
+    margin-right: 89px;
+   }
   @media screen and (min-width: 1600px){
     margin-left: 70px;
+    margin-right: 0;
   }
   
 }
