@@ -1,6 +1,11 @@
 .activities {
-  padding-bottom: 94px;
+display: none;
+  @media screen and (min-width: 1600px) {
+    display: block;
+    padding: 94px 0;
+  }
 }
+ 
 
 .activities__list {
   display: flex;
