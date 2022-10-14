@@ -1,15 +1,29 @@
-/* OUR CLIENTS */
 .clients {
+  padding: 60px 0;
+  
+  @media screen and (min-width: 1600px) {
   padding: 94px 0;
+  }
 }
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients__item {
   display: flex;
+  width: calc((100% - 30px) / 2);
+  
+  @media screen and (min-width: 768px){
+  width: calc((100% - 60px) / 3)
+ }
+   @media screen and (min-width: 1600px){
   width: calc((100% - 150px) / 6);
+
+   }
+
 }
 
 .clients__icon {
@@ -39,7 +53,5 @@
   }
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 

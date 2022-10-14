@@ -1,16 +1,27 @@
 
+.logo__container {
+    padding: 15px 0;
+   
+    @media screen and (min-width: 768px) {
+    padding: 24px 0;
+    margin-right: 87px;  
+    }  
+    
+    @media screen and (min-width: 1600px) {
+         margin-right: 93px;
+    }
+}
 .logo {
     @include font (26px, 1.2);
     display: block;
-    margin-right: 93px;
+    
     font-family: var(--logo-font);
     font-weight: 700;
     color: var(--nav-color);
-
             
 }
 .header__logo {
- padding-top: 24px;
+//  padding-top: 24px;
 
  &--wordpart {
     line-height: 1.2;

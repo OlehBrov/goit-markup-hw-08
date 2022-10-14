@@ -1,12 +1,19 @@
 .subscribe {
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
-  padding-left: 93px;
+  align-items: center;
+  @media screen and (min-width: 1600px) {
+    align-items: flex-start;
+    flex-grow: 1;
+    padding-left: 93px;
+  }
 }
 
 .subscribe__form {
-  display: flex;
+  width: 100%;
+  @media screen and (min-width: 1600px) {
+    display: flex;
+  }
 }
 
 .submit__btn {
@@ -41,6 +48,7 @@
   &:focus {
     transform: scale(1.1);
   }
+  margin: 0 auto;
 }
 
 .subscribe__input {
@@ -67,5 +75,10 @@
 }
 
 .subscribe__input--field {
-  margin-right: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  @media screen and (min-width: 1600px) {
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
