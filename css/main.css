@@ -574,6 +574,12 @@ ul {
 .advantages__title--header {
   margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .advantages__title--header {
+    text-align: start;
+  }
 }
 
 .advantages__text {
