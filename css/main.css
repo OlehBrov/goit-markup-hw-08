@@ -317,6 +317,7 @@ ul {
 }
 
 .header {
+  position: relative;
   background-color: var(--white-text);
   border-bottom: 1px solid #ececec;
 }
@@ -410,6 +411,152 @@ ul {
 .contact__link:hover, .contact__link:focus {
   fill: var(--nav-color);
   color: var(--nav-color);
+}
+
+.js-open-menu {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+.menu-toggle {
+  display: block;
+  height: 40px;
+  width: 40px;
+  fill: black;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mob-menu-open__icon,
+.mob-menu-close__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-text);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 40px;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mob__nav,
+.mobile__contacts {
+  display: block;
+}
+
+.mob__nav {
+  margin-bottom: auto;
+}
+
+.mobile__navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile__navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile__navigation__link {
+  display: block;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  color: var(--main-text-color);
+}
+.mobile__navigation__link--active {
+  color: var(--nav-color);
+}
+
+.mobile__phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--nav-color);
+  fill: var(--nav-color);
+  margin-bottom: 32px;
+}
+
+.mobile__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  margin-bottom: 64px;
+}
+
+.mobile__social {
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.mobile__social__link {
+  position: relative;
+  display: flex;
+  color: var(--nav-color);
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: capitalize;
+}
+
+.social__decor::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: -10px;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.mob__social__item {
+  display: block;
 }
 
 .logo__container {
