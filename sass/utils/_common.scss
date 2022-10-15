@@ -6,28 +6,27 @@ h5,
 h6,
 p,
 ul {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    padding-left: 0;
+  padding-left: 0;
 }
-
 
 .container {
-    width: 480px;
-    padding: 0 15px;
-    margin: 0 auto;
-    
-    @media screen and (min-width: 768px){
-    width: 768px;
+  width: 480px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+ @include tablet {
+   width: 768px;
   }
-  
-  @media screen and (min-width: 1600px){
-     width: 1200px;
+
+  @include desktop {
+    width: 1200px;
   }
-    
 }
+
 .container__header {
   font-size: 28px;
   line-height: 1.17;
@@ -37,21 +36,20 @@ ul {
   color: var(--main-text-color);
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1600px){
+  @include desktop {
     font-size: 36px;
     margin-bottom: 50px;
   }
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .image {
-    display: block;
+  display: block;
 }
-

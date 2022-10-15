@@ -1,7 +1,7 @@
 .footer__container {
   padding: 60px 15px;
   
-  @media screen and (min-width: 768px) {
+  @include tablet {
    display: flex;
    flex-wrap: wrap;
     align-items: baseline;  
@@ -28,13 +28,13 @@
     text-align: center;
     margin-bottom: 60px;
   }
-@media screen and (min-width: 768px){
+@include tablet{
   
     margin-left: 76px;
     margin-right: auto;
 }
     
-   @media screen and (min-width: 1600px){
+   @include desktop{
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 20px;
@@ -68,10 +68,10 @@
     align-items: center;
     margin-bottom: 60px;
   }
-   @media screen and (min-width: 768px) {
+   @include tablet {
     margin-right: 89px;
    }
-  @media screen and (min-width: 1600px){
+  @include desktop{
     margin-left: 70px;
     margin-right: 0;
   }

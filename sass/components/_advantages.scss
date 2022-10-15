@@ -1,7 +1,7 @@
 .advantages {
   padding: 60px 0;
 
-  @media screen and (min-width: 1600px) {
+  @include desktop {
     padding: 94px 0;
   }
 }
@@ -12,7 +12,7 @@
   flex-wrap: wrap;
   gap: 30px;
 
-   @media screen and (min-width: 768px) {
+   @include tablet {
    align-items: flex-start;
    flex-direction: row;
 }
@@ -28,10 +28,10 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  @media screen and (min-width: 768px){
+  @include tablet {
     width: calc((738px - 30px) /2);
   }
-   @media screen and (min-width: 1600px) {
+   @include desktop {
    width: calc((1170px - 90px) / 4);
 }
 }
@@ -55,7 +55,8 @@
   margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
-   @media screen and (min-width: 768px){
+
+   @include tablet {
     text-align: start;
    }
 }

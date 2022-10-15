@@ -6,7 +6,7 @@
     width: 100%;
    } 
   
-  @media screen and (min-width: 1600px) {
+  @include desktop {
     align-items: flex-start;
     flex-grow: 1;
     padding-left: 93px;
@@ -15,7 +15,7 @@
 
 .subscribe__form {
   min-width: 450px;
-  @media screen and (min-width: 1600px) {
+  @include desktop {
     display: flex;
     width: 100%;
   }
@@ -82,7 +82,7 @@
 .subscribe__input--field {
   margin-bottom: 20px;
   width: 100%;
-  @media screen and (min-width: 1600px) {
+ @include desktop{
     margin-right: 12px;
     margin-bottom: 0;
   }

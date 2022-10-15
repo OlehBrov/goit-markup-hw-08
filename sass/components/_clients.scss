@@ -1,7 +1,7 @@
 .clients {
   padding: 60px 0;
   
-  @media screen and (min-width: 1600px) {
+  @include desktop {
   padding: 94px 0;
   }
 }
@@ -16,10 +16,10 @@
   display: flex;
   width: calc((100% - 30px) / 2);
   
-  @media screen and (min-width: 768px){
+ @include tablet{
   width: calc((100% - 60px) / 3)
  }
-   @media screen and (min-width: 1600px){
+   @include desktop{
   width: calc((100% - 150px) / 6);
 
    }

@@ -1,6 +1,7 @@
 .activities {
 display: none;
-  @media screen and (min-width: 1600px) {
+
+  @include desktop {
     display: block;
     padding: 94px 0;
   }

@@ -2,7 +2,7 @@
   background-color: var(--team-section-style);
     padding: 60px 0;
 
-  @media screen and (min-width: 1600px) {
+  @include desktop{
     padding: 94px 0;
   }
 }
@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   gap: 30px;
 
-  @media screen and (min-width: 768px){
+  @include tablet{
   display: flex;
   flex-wrap: wrap;
    flex-direction: row;
@@ -29,11 +29,11 @@
   border-radius: 0px 0px 4px 4px;
 
 
-  @media screen and (min-width: 768px){
+  @include tablet{
     width: calc((738px - 30px) /2);
   }
 
-  @media screen and (min-width: 1600px){
+  @include desktop{
     width: calc((100% - 90px) / 4);
   }
 }
