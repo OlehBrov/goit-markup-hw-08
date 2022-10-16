@@ -4,15 +4,21 @@
 
 .products__filter {
   @include button__flex__center ();
-  
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
-.filters {
-  margin-bottom: 34px;
-}
 
 .filter__btn {
-  @include button__flex__center;
+
   font-family: inherit;
   @include font (16px, 1.6);
   font-weight: 500;
@@ -40,6 +46,7 @@
 
 }
 
+
 .filter__item:not(:last-child) {
   margin-right: 8px;
 }
@@ -47,13 +54,32 @@
 
 .products__list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 30px;
+
+  @include tablet {
+    flex-direction: row;
+  }
+}
+
+.products__item {
+  max-width: 450px;
+  margin: 0 auto;
+
+  @include tablet{
+    width: calc((738px - 30px) / 2);
+  }
+
+  @include desktop{
+    width: calc((1170px - 60px) / 3);
+  }
 }
 
 .products__thumb {
   position: relative;
   overflow: hidden;
+
 }
 
 .products__card {

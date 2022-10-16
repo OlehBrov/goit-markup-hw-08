@@ -102,10 +102,16 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--white-text);
-  width: 528px;
+  max-width: 450px;
+  max-height: 100%;
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__btn__close {
@@ -563,28 +569,28 @@ ul {
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/mob_hero-2x-960w.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mob_hero-2x-960w.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../../images/tab_hero-1x-768w.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tab_hero-1x-768w.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/tab_hero-2x-1536w.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tab_hero-2x-1536w.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../../images/desk_hero-1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desk_hero-1x.jpg);
     padding: 200px 0;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/desk_hero-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desk_hero-2x.jpg);
   }
 }
 
@@ -799,7 +805,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    width: calc((100% - 90px) / 4);
+    width: 270px;
   }
 }
 
@@ -1027,16 +1033,21 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
-
-.filters {
-  margin-bottom: 34px;
+@media screen and (min-width: 768px) {
+  .products__filter {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__filter {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.6;
@@ -1064,8 +1075,29 @@ ul {
 
 .products__list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .products__list {
+    flex-direction: row;
+  }
+}
+
+.products__item {
+  max-width: 450px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .products__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__item {
+    width: 370px;
+  }
 }
 
 .products__thumb {

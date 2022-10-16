@@ -1,8 +1,8 @@
 .team {
   background-color: var(--team-section-style);
-    padding: 60px 0;
+  padding: 60px 0;
 
-  @include desktop{
+  @include desktop {
     padding: 94px 0;
   }
 }
@@ -13,13 +13,11 @@
   flex-wrap: wrap;
   gap: 30px;
 
-  @include tablet{
-  display: flex;
-  flex-wrap: wrap;
-   flex-direction: row;
- 
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
-
 }
 
 .team__item {
@@ -28,13 +26,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-
-  @include tablet{
+  @include tablet {
     width: calc((738px - 30px) / 2);
   }
 
-  @include desktop{
-    width: calc((100% - 90px) / 4);
+  @include desktop {
+    width: calc((1170px - 90px) / 4);
   }
 }
 
@@ -51,7 +48,7 @@
 }
 
 .member__name {
-  @include font (16px, 1.2);
+  @include font(16px, 1.2);
   font-weight: 500;
   letter-spacing: 0.03em;
   margin-bottom: 5px;
@@ -59,7 +56,7 @@
 }
 
 .member__position {
-  @include font (16px, 1.2);
+  @include font(16px, 1.2);
   letter-spacing: 0.03em;
   color: var(--advantages-paragraph);
   margin-top: 5px;
@@ -70,7 +67,3 @@
   justify-content: center;
   margin-top: 16px;
 }
-
-
-
-
