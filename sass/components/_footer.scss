@@ -1,3 +1,7 @@
+.footer {
+  background-color: var(--footer-bgc);
+}
+
 .footer__container {
   padding: 60px 15px;
   
@@ -7,10 +11,6 @@
     align-items: baseline;  
   }
  
-}
-
-.footer {
-  background-color: var(--footer-bgc);
 }
 
 .footer__logo {
@@ -29,7 +29,7 @@
     margin-bottom: 60px;
   }
 @include tablet{
-  
+    margin-bottom: 60px;
     margin-left: 76px;
     margin-right: auto;
 }
@@ -38,6 +38,7 @@
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 20px;
+    
    }
   
 }

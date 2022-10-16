@@ -556,14 +556,35 @@ ul {
 .hero {
   padding: 120px 0;
   background-color: var(--hero-bgc);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-image.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mob_hero-1x-480w.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/mob_hero-2x-960w.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../../images/tab_hero-1x-768w.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/tab_hero-2x-1536w.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
+    background-image: url(../../images/desk_hero-1x.jpg);
     padding: 200px 0;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/desk_hero-2x.jpg);
   }
 }
 
@@ -894,6 +915,10 @@ ul {
   border: 1px solid var(--nav-color);
 }
 
+.footer {
+  background-color: var(--footer-bgc);
+}
+
 .footer__container {
   padding: 60px 15px;
 }
@@ -903,10 +928,6 @@ ul {
     flex-wrap: wrap;
     align-items: baseline;
   }
-}
-
-.footer {
-  background-color: var(--footer-bgc);
 }
 
 .footer__logo {
@@ -926,6 +947,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .footer__contact__wrap {
+    margin-bottom: 60px;
     margin-left: 76px;
     margin-right: auto;
   }
@@ -1108,17 +1130,14 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-@media screen and (max-width: 1599px) {
-  .subscribe {
-    width: 100%;
-  }
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
     align-items: flex-start;
     flex-grow: 1;
     padding-left: 93px;
+    width: auto;
   }
 }
 
@@ -1189,6 +1208,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .subscribe__input--field {
+    max-width: 358px;
     margin-right: 12px;
     margin-bottom: 0;
   }
