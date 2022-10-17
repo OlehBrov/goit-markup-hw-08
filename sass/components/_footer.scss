@@ -44,12 +44,22 @@
 }
 
 .footer__contact__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+
+.footer__contact{
+font-style: normal;
+font-weight: 400;
+@include font (14px, 1.71);
+letter-spacing: 0.03em;
 }
 
 .address__link {
   color: var(--white-text);
+  font-weight: 400;
+  @include font(14px, 1.71);
   font-style: normal;
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -80,6 +90,9 @@
 }
 .footer__social__list {
   display: flex;
+  margin-top: 20px;
+ 
+  
 }
 
 .footer__paragraph {
@@ -88,10 +101,12 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-text);
-  margin-bottom: 20px;
+  
   text-align: center;
   display: block;
 
+  
+  
   @include desktop {
     text-align: start;
   }

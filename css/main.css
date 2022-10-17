@@ -137,6 +137,7 @@ ul {
   margin: 0;
   padding: 0;
   color: var(--black);
+  background-color: #fff;
 }
 
 .icon__close {
@@ -273,6 +274,8 @@ ul {
   align-items: center;
   top: 3px;
   left: 0;
+  width: 16px;
+  height: 16px;
   fill: var(--nav-color);
   border: 1px solid var(--nav-color);
   border-radius: 2px;
@@ -292,7 +295,7 @@ ul {
 }
 
 .agreement__text {
-  margin-left: 20px;
+  margin-left: 24px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -370,6 +373,11 @@ ul {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .header__navigation {
+    align-items: center;
+  }
+}
 
 .navigation__list {
   display: flex;
@@ -413,7 +421,6 @@ ul {
   .header__contacts {
     display: flex;
     flex-direction: column;
-    padding-top: 21px;
     gap: 10px;
     align-items: baseline;
   }
@@ -421,7 +428,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .header__contacts {
     flex-direction: row;
-    padding-top: 24px;
   }
 }
 
@@ -1029,11 +1035,22 @@ ul {
 }
 
 .footer__contact__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+
+.footer__contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .address__link {
   color: var(--white-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
   font-style: normal;
   transition-property: color;
   transition-duration: 250ms;
@@ -1067,6 +1084,7 @@ ul {
 
 .footer__social__list {
   display: flex;
+  margin-top: 20px;
 }
 
 .footer__paragraph {
@@ -1075,7 +1093,6 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-text);
-  margin-bottom: 20px;
   text-align: center;
   display: block;
 }
@@ -1241,6 +1258,28 @@ ul {
   flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe {
+    margin: 0 auto;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    width: auto;
+    margin-left: 93px;
+  }
+}
+
+.subscribe__form {
+  margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    flex-direction: row;
+  }
+}
+
 .footer__text {
   text-align: center;
   font-weight: 700;
@@ -1253,10 +1292,6 @@ ul {
   .footer__text {
     text-align: start;
   }
-}
-
-.subscribe__form {
-  margin-top: 20px;
 }
 
 .subscribe__input {
@@ -1280,6 +1315,7 @@ ul {
   .subscribe__input {
     margin-right: 12px;
     margin-bottom: 0;
+    width: 358px;
   }
 }
 
@@ -1314,4 +1350,9 @@ ul {
 }
 .submit__btn:hover, .submit__btn:focus {
   transform: scale(1.1);
+}
+@media screen and (min-width: 1200px) {
+  .submit__btn {
+    margin: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

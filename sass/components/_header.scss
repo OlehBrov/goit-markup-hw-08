@@ -19,6 +19,9 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  @include tablet {
+    align-items: center;
+  }
 }
 
 .navigation__list {
@@ -69,14 +72,14 @@
   @include tablet {
     display: flex;
     flex-direction: column;
-    padding-top: 21px;
+    
     gap: 10px;
     align-items: baseline;
   }
 
   @include desktop {
     flex-direction: row;
-    padding-top: 24px;
+    
   }
 }
 
