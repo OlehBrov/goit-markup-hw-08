@@ -798,7 +798,6 @@ ul {
 
 .activities__list {
   display: flex;
-  width: calc((100% - 60px) / 3);
 }
 
 .activities__item:not(:first-child) {
@@ -807,6 +806,7 @@ ul {
 
 .activities__thumb {
   position: relative;
+  width: calc((100% - 60px) / 3);
 }
 
 .activities__products {
