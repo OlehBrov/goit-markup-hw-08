@@ -34,7 +34,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/tab_hero-2x-1536w.jpg);
+        url("../../images/tab_hero-2x-1536w.jpg");
     }
   }
 
@@ -43,7 +43,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/desk_hero-1x.jpg);
+      url("../../images/desk_hero-1x.jpg");
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -52,7 +52,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/desk_hero-2x.jpg);
+        url("../../images/desk_hero-2x.jpg");
     }
     padding: 200px 0;
   }
