@@ -433,13 +433,14 @@ ul {
   .header__contacts {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__contacts {
     flex-direction: row;
+    gap: 30px;
   }
 }
 
@@ -1126,14 +1127,16 @@ ul {
 
 .products__filter {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 40px;
   flex-wrap: wrap;
+  width: 326px;
 }
 @media screen and (min-width: 768px) {
   .products__filter {
     margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {

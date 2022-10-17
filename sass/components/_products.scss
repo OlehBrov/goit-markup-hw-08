@@ -3,12 +3,17 @@
 }
 
 .products__filter {
-  @include button__flex__center ();
+  display: flex;
   margin-bottom: 40px;
   flex-wrap: wrap;
+  width: 326px;
+
 
   @include tablet {
     margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   @include desktop {

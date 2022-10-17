@@ -73,13 +73,13 @@
     display: flex;
     flex-direction: column;
     
-    gap: 30px;
+    gap: 10px;
     align-items: baseline;
   }
 
   @include desktop {
     flex-direction: row;
-    
+     gap: 30px;
   }
 }
 
