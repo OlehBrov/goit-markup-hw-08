@@ -15,6 +15,7 @@
 
 .footer__logo {
   margin-bottom: 20px;
+  
 }
 .footer-studio-word {
   line-height: 1.2;
@@ -24,17 +25,17 @@
 
 
 .footer__contact__wrap {
-  @media screen and (max-width: 767px){
     text-align: center;
     margin-bottom: 60px;
-  }
+
     @include tablet{
-    margin-bottom: 60px;
+   
     margin-left: 76px;
     margin-right: auto;
 }
     
    @include desktop{
+    text-align: start;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 20px;
@@ -52,6 +53,7 @@ font-style: normal;
 font-weight: 400;
 @include font (14px, 1.71);
 letter-spacing: 0.03em;
+
 }
 
 .address__link {

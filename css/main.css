@@ -505,7 +505,6 @@ ul {
 @media screen and (max-width: 340px) {
   .menu-container {
     padding: 24px 20px;
-    justify-content: stretch;
   }
 }
 
@@ -1013,21 +1012,19 @@ ul {
   color: var(--white-text);
 }
 
-@media screen and (max-width: 767px) {
-  .footer__contact__wrap {
-    text-align: center;
-    margin-bottom: 60px;
-  }
+.footer__contact__wrap {
+  text-align: center;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__contact__wrap {
-    margin-bottom: 60px;
     margin-left: 76px;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__contact__wrap {
+    text-align: start;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 20px;
