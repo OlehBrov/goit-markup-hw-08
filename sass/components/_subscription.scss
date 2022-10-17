@@ -1,30 +1,167 @@
-.subscribe {
+// .subscribe {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   width: 100%;
+//   min-width: 320px;
+// }
+// @media screen and (min-width: 1200px) {
+//   .subscribe {
+//     align-items: flex-start;
+//     flex-grow: 1;
+//     padding-left: 93px;
+//     width: auto;
+//   }
+// }
+
+
+// .subscribe__form {
+//   // min-width: 320px;
+//   width: 100%;
+//   min-width: 320px;
+//   @include desktop {
+//     display: flex;
+//     width: 100%;
+//   }
+// }
+
+// .submit__btn {
+//   @include button__flex__center;
+//   @include font(16px, 1.88);
+//   font-weight: 700;
+//   font-style: normal;
+//   color: var(--white-text);
+//   background-color: var(--nav-color);
+
+//   border: none;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   border-radius: 4px;
+//   padding: 10px 28px;
+//   cursor: pointer;
+//   scale: (1);
+//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &::after {
+//     content: "";
+//     display: block;
+//     width: 24px;
+//     height: 24px;
+
+//     background-image: url(../images/icon-send.svg);
+//     fill: var(--white-text);
+
+//     margin-left: 10px;
+//   }
+
+//   &:hover,
+//   &:focus {
+//     transform: scale(1.1);
+//   }
+
+  
+//   margin: 0 auto;
+  
+//   @include desktop {
+//     margin: 0;
+//   }
+
+// }
+
+// .subscribe__input {
+//   background: transparent;
+//   padding: 15px;
+//   min-width: 320px;
+//   width: 450px;
+ 
+
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//   border-radius: 4px;
+//   color: var(--white-text);
+//   caret-color: var(--nav-color);
+
+//   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//     outline: transparent;
+//     border: 1px solid var(--nav-color);
+//   }
+//   &:not(:placeholder-shown) {
+//     border: 1px solid var(--nav-color);
+//   }
+// }
+
+// .subscribe__input--field {
+//   margin-bottom: 20px;
+ 
+//  @include desktop{
+//     width: 358px;
+//     margin-right: 12px;
+//     margin-bottom: 0;
+//   }
+// }
+
+
+
+
+.subscribe,
+.subscribe__form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
-   
+}
+.footer__text {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-text);
+
   @include desktop {
-    align-items: flex-start;
-    flex-grow: 1;
-    padding-left: 93px;
-    width: auto;
+    text-align: start;
   }
 }
-
 .subscribe__form {
-  min-width: 320px;
-  @include desktop {
-    display: flex;
-    width: 100%;
+margin-top: 20px;
+}
+.subscribe__input {
+  background: transparent;
+  padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--white-text);
+  caret-color: var(--nav-color);
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    outline: transparent;
+    border: 1px solid var(--nav-color);
   }
+  &:not(:placeholder-shown) {
+    border: 1px solid var(--nav-color);
+  }
+
+   @include desktop {
+    margin-right: 12px;
+    margin-bottom: 0;
+   }
 }
 
 .submit__btn {
-  @include button__flex__center;
-  @include font(16px, 1.88);
-  font-weight: 700;
-  font-style: normal;
+  margin-top: 20px;
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
   color: var(--white-text);
   background-color: var(--nav-color);
 
@@ -41,49 +178,20 @@
     display: block;
     width: 24px;
     height: 24px;
+    float: right;
+    margin-top: 5px;
+  
 
     background-image: url(../images/icon-send.svg);
     fill: var(--white-text);
 
-    margin-left: 10px;
+    
   }
 
   &:hover,
   &:focus {
     transform: scale(1.1);
   }
-  margin: 0 auto;
-}
 
-.subscribe__input {
-  flex-grow: 1;
-  background: transparent;
-  padding: 15px;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  color: var(--white-text);
-  caret-color: var(--nav-color);
-
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    outline: transparent;
-    border: 1px solid var(--nav-color);
   }
-  &:not(:placeholder-shown) {
-    border: 1px solid var(--nav-color);
-  }
-}
-
-.subscribe__input--field {
-  margin-bottom: 20px;
-  width: 100%;
- @include desktop{
-    max-width: 358px;
-    margin-right: 12px;
-    margin-bottom: 0;
-  }
-}

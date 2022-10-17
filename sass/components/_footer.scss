@@ -4,11 +4,11 @@
 
 .footer__container {
   padding: 60px 15px;
-  
+    
   @include tablet {
    display: flex;
    flex-wrap: wrap;
-    align-items: baseline;  
+   align-items: baseline;  
   }
  
 }
@@ -28,7 +28,7 @@
     text-align: center;
     margin-bottom: 60px;
   }
-@include tablet{
+    @include tablet{
     margin-bottom: 60px;
     margin-left: 76px;
     margin-right: auto;
@@ -89,6 +89,12 @@
   text-transform: uppercase;
   color: var(--white-text);
   margin-bottom: 20px;
+  text-align: center;
+  display: block;
+
+  @include desktop {
+    text-align: start;
+  }
 }
 
 
