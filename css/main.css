@@ -1182,7 +1182,6 @@ ul {
 
 .products__item {
   max-width: 450px;
-  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .products__item {

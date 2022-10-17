@@ -65,10 +65,12 @@
 
 .products__item {
   max-width: 450px;
-  margin: 0 auto;
+  
 
   @include tablet{
     width: calc((738px - 30px) / 2);
+    
+    
   }
 
   @include desktop{
