@@ -5,7 +5,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/mob_hero-1x-480w.jpg);
+    url(../images/mob_hero-1x-480w.jpg);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -16,7 +16,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/mob_hero-2x-960w.jpg);
+      url(../images/mob_hero-2x-960w.jpg);
   }
 
   @include tablet {
@@ -24,7 +24,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tab_hero-1x-768w.jpg);
+      url(../images/tab_hero-1x-768w.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -33,7 +33,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/tab_hero-2x-1536w.jpg);
+        url(../images/tab_hero-2x-1536w.jpg);
     }
   }
 
