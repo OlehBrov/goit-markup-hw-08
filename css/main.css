@@ -738,7 +738,8 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .advantages {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 0px;
   }
 }
 
