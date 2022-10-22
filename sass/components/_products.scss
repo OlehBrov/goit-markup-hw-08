@@ -11,6 +11,7 @@
   margin-bottom: 40px;
   flex-wrap: wrap;
   gap: 15px 8px;
+  max-width: 326px;
 
 
   @include tablet {
@@ -19,6 +20,7 @@
     align-items: center;
     width: 100%;
     gap: 8px;
+    max-width: inherit;
   }
 
   @include desktop {
